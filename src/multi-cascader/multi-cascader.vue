@@ -256,7 +256,8 @@ export default {
         let targetNode
         if (setValue) {
           targetNode = _.find(this.store.nodeList, { [this.isTwoDimensionValue ? '_idArr' : this.valueKey]: o })
-          tempSelectedIds.push(targetNode.id)
+          //tempSelectedIds.push(targetNode.id)
+		  tempSelectedIds.push(o)
         } else {
           targetNode = this.store.nodesMap[o]
           tempSelectedIds.push(o)
